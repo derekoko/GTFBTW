@@ -42,12 +42,12 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
   }
 });
 
-chrome.browserAction.onClicked.addListener((tab) => {
-  if (extensionIsActive) {
-    chrome.browserAction.setIcon({ path: './images/icon-128.png' });
-    extensionIsActive = false;
-  } else {
-    chrome.browserAction.setIcon({ path: './images/active-128.png' });
-    extensionIsActive = true;
-  }
-});
+// chrome.browserAction.onClicked.addListener((tab) => {
+//   if (extensionIsActive) {
+//     chrome.browserAction.setIcon({ path: './images/icon-128.png' });
+//     extensionIsActive = false;
+//   } else {
+//     chrome.browserAction.setIcon({ path: './images/active-128.png' });
+//     extensionIsActive = true;
+//   }
+// });
