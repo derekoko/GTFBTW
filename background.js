@@ -11,6 +11,7 @@ const badSites = [
   '9gag.com',
   'hulu.com',
   'primevideo.com',
+  'fortnite.com',
 ];
 
 //Overall Logic
