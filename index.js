@@ -11,7 +11,8 @@ async function getCatBoy() {
   document.querySelector(
     '.audio'
   ).innerHTML = `<audio id="music" controls autoplay loop>
-<source src="./music/${musicUrl[0]}" />`;
+<source src="../music/airhorn/.mp3" />
+</audio>`;
 }
 
 getCatBoy();
