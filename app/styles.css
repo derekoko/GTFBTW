@@ -21,3 +21,13 @@ body {
   text-align: center;
   background-color: white;
 }
+.cat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* html {
+  background: url('image.png') no-repeat center fixed;
+  background-size: cover;
+} */
