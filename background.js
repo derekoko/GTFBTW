@@ -19,6 +19,14 @@ const badSites = [
 
 // const newPerms = { permissions: badSites };
 let time = 5;
+let saved = null;
+
+chrome.runtime.onMessage.addListener(function (message) {
+  if (message.time) {
+    saved = message.time;
+    console.log(saved);
+  }
+});
 chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
   if (changeInfo.status === 'complete') {
     for (const site of badSites) {
@@ -35,7 +43,7 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
             });
           }
         }, 1000);
-        time = 5;
+        time = saved;
         break;
       }
     }
