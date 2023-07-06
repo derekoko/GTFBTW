@@ -3,7 +3,7 @@ async function getCatBoy() {
   const data = await response.json();
   const baka = data.url;
 
-  const random = Math.floor(Math.random() * 6) + 1;
+  const random = Math.floor(Math.random() * 7) + 1;
 
   document.querySelector('.cat').innerHTML = `
 <img id='baka' src="${baka}" alt="baka img">`;
