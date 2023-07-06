@@ -4,7 +4,8 @@
   "env": {
     "node": true,
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "webextensions": true
   },
   "plugins": ["react"],
   "extends": ["eslint:recommended", "plugin:react/recommended"],
@@ -24,6 +25,6 @@
     "space-infix-ops": "warn"
   },
   "settings": {
-    "react": { "version": "detect"}
+    "react": { "version": "detect" }
   }
 }
